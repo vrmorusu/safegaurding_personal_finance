@@ -1,0 +1,1 @@
+from historical return distributions (Pérignon & Smith, 2010). historical_returns = hist_df.select(col("daily_return").alias("return")) his-torical_pd = historical_returns.toPandas() historical_var = np.percentile(historical_pd["return"], 5)
