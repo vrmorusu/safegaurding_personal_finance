@@ -1,0 +1,1 @@
+stats = histori-cal_returns.select(mean("return").alias("mean"), stddev("return").alias("stddev")).collect() mu = stats[0]["mean"] sigma = stats[0]["stddev"] num_simulations = 10000 mc_returns = np.random.normal(mu, sigma, num_simulations) mc_var = np.percentile(mc_returns, 5)
